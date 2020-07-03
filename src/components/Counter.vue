@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
     name: 'Counter',
     computed: {
@@ -16,7 +16,7 @@ export default {
         ])
     },
     methods: {
-        ...mapMutations([
+        ...mapActions([
             'decrement',
             'increment'
         ])
